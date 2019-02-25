@@ -8,7 +8,7 @@ Note: As per instructions, for this challenge, prescriber's id is not taken into
 
 ### Input Dataset (itcont.txt)
 
-    Dataset provides information on prescription drugs prescribed by individual physicians and other health care providers. The dataset identifies prescribers by their ID, last name, and first name. It also describes the specific prescriptions that were dispensed at their direction, listed by drug name and the cost of the medication.
+Dataset provides information on prescription drugs prescribed by individual physicians and other health care providers. The dataset identifies prescribers by their ID, last name, and first name. It also describes the specific prescriptions that were dispensed at their direction, listed by drug name and the cost of the medication.
 
         id,prescriber_last_name,prescriber_first_name,drug_name,drug_cost
         1952310666,A'BODJEDI,ENENGE,ALPRAZOLAM,1964.49
@@ -19,11 +19,11 @@ Note: As per instructions, for this challenge, prescriber's id is not taken into
 
 ### Output Dataset (top_cost_drug.txt)
 
-    Each line of this file contains these fields:
+Each line of this file contains these fields:
 
-    drug_name: the exact drug name as shown in the input dataset
-    num_prescriber: the number of unique prescribers who prescribed the drug. For the purposes of this challenge, a prescriber is considered the same person if two lines share the same prescriber first and last names
-    total_cost: total cost of the drug across all prescribers
+drug_name: the exact drug name as shown in the input dataset
+num_prescriber: the number of unique prescribers who prescribed the drug. For the purposes of this challenge, a prescriber is considered the same person if two lines share the same prescriber first and last names
+total_cost: total cost of the drug across all prescribers
 
         drug_name,num_prescriber,total_cost
         HARVONI,2,1.53061e+06
@@ -39,7 +39,7 @@ Note: As per instructions, for this challenge, prescriber's id is not taken into
     ├── README.md 
     ├── run.sh
     ├── src
-    │   └── pharmacy_counting.py
+    │   └── pharmacy-counting.py
     |   └── csv_reader.py
     |   └── data_manager.py
     ├── input
@@ -62,7 +62,7 @@ Note: As per instructions, for this challenge, prescriber's id is not taken into
 - run.sh - This file can directly execute the code which is residing under src directory using python3
 
 - src
-    - pharmacy_counting.py - This is the main code file which calls all the other methods residing inside csv_reader.py and data_manager.py. 
+    - pharmacy-counting.py - This is the main code file which calls all the other methods residing inside csv_reader.py and data_manager.py. 
     This file calls methods to read input text file, perform transformations and write final output to a file.
 
     - csv_reader.py - This file contains methods to read input text file as a CSV, method to arrange columns in desired output format and method to write final output to a text file.
@@ -81,3 +81,9 @@ Note: As per instructions, for this challenge, prescriber's id is not taken into
     The output for test result was PASS
 
     [Sun, Feb 24, 2019  1:18:04 PM] 1 of 1 tests passed
+    
+### Code Execution
+
+The python code for this problem can be executed by running run.sh script which is kept in the outermost folder.
+
+     sh -x run.sh
