@@ -1,8 +1,8 @@
 # Pharmacy-Counting-Coding-Challenge
 
-This program uses python3 to generate a list of all drugs, the total number of unique individuals who prescribed the medication, and the total drug cost, which is listed in descending order based on the total drug cost and if there is a tie, drug name in ascending order.
+This program uses python3 and Centers for Medicare & Medicaid Services dataset to generate a list of all drugs, the total number of unique individuals who prescribed the medication, and the total drug cost, which is listed in descending order based on the total drug cost and if there is a tie, drug name in ascending order.
 
-The code is written in python 3.7 and uses only csvReader library to read input and write output to a file. All other functionality is implemented using input data structures in python i.e Lists and Dictionaries.
+The code is written in python 3.7 and uses only csvReader library to read input and write output to a file. All other functionality is implemented using default input data structures in python i.e Lists and Dictionaries.
 
 Note: As per instructions, for this challenge, prescriber's id is not taken into consideration to mark an individual as unique prescriber, rather if two lines have same first name and last name then it is considered as same prescriber even if prescriber id is different. 
 
@@ -67,7 +67,7 @@ total_cost: total cost of the drug across all prescribers
 
     - csv_reader.py - This file contains methods to read input text file as a CSV, method to arrange columns in desired output format and method to write final output to a text file.
 
-    - data_manager.py - This file contains method to aggregate same drug cost through unique prescribers and then a method to aggregate unique drug cost through all prescribers.
+    - data_manager.py - This file contains method to aggregate same drug cost for each unique prescribers and then a method to aggregate unique drug cost through all prescribers.
 
     NOTE: All the above code files have been commented to give an insight as to what each function does
 - input
