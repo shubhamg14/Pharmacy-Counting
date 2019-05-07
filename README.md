@@ -1,4 +1,5 @@
 # Pharmacy-Counting
+**_Drug name, number of unique prescribers, total drug cost, displayed in descending order of total cost, written in python_**
 
 This program uses python3 and Centers for Medicare & Medicaid Services dataset to generate a list of all drugs, the total number of unique individuals who prescribed the medication, and the total drug cost, which is listed in descending order based on the total drug cost and if there is a tie, drug name in ascending order.
 
